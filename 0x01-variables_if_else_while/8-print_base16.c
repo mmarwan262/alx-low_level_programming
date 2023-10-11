@@ -11,18 +11,16 @@
 
 int main(void)
 {
-char digit = '0';
-while (digit <= '9')
+char digit, lowercaseHex;
+    
+for (digit = '0'; digit <= '9'; digit++)
 {
 putchar(digit);
-digit++;
 }
     
-char lowercaseHex = 'a';
-while (lowercaseHex <= 'f')
+for (lowercaseHex = 'a'; lowercaseHex <= 'f'; lowercaseHex++)
 {
 putchar(lowercaseHex);
-lowercaseHex++;
 }
     
 putchar('\n');
