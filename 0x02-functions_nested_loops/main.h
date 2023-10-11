@@ -3,9 +3,12 @@
 
 #include <stdio.h>
 
+/* _putchar function prototype */
 int  _putchar(char c):
+
+/* Function prototype for print_alphabet */
 void print_alphabet(void);
 
 
-#endif
+#endif /* MAIN_H */
 
