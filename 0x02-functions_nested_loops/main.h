@@ -3,12 +3,9 @@
 
 #include <stdio.h>
 
-/* _putchar function prototype */
-int  _putchar(char c):
-
-/* Function prototype for print_alphabet */
+int _putchar(char c):
 void print_alphabet(void);
+void print_alphabet_x10(void);
 
-
-#endif /* MAIN_H */
+#endif
 
