@@ -1,15 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet - utilizes on the_putcher function to print the alphabet a - z
- *
+ * print_alphabet - prints the lowercase alphabet followed by a new line
 */
 
 void print_alphabet(void)
 {
-int ch;
+char letter = 'a';
 
-for (ch = 'a'; ch <= 'z'; ch++)
-_putchar(ch);
+while (letter <= 'z')
+{
+_putchar(letter);
+letter++;
+}
+
 _putchar('\n');
 }
+
