@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * leet - Encodes a string into "1337" based on character replacements.
  * @str: The input string to be encoded.
@@ -7,22 +9,23 @@
 
 char *leet(char *str)
 {
-char leet_chars[] = "aAeEoOtTlL";
-char leet_replacements[] = "44337711";
+char *cp = str;
+char key[] = {'A', 'E', 'O', 'T', 'L', 'a', 'e', 'o', 't', 'l'};
+int value[] = {4, 3, 0, 7, 1, 4, 3, 0, 7, 1};
+unsigned int i;
 
-int i, j;
-
-for (i = 0; str[i]; i++)
+while (*str)
 {
-for (j = 0; leet_chars[j]; j++)
+for (i = 0; i < sizeof(key) / sizeof(char); i++)
 {
-if (str[i] == leet_chars[j])
+if (*str == key[i])
 {
-str[i] = leet_replacements[j];
+*str = value[i] + '0';
 break;
 }
 }
+str++;
 }
 
-return (str);
+return (cp);
 }
