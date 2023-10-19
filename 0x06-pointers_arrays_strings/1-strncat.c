@@ -31,3 +31,4 @@ dest [c + i] = '\0';
 
 return (dest);
 }
+~ 
