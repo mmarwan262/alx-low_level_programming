@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_diagsums - description
  * @a: 2d array of int types
@@ -18,5 +17,5 @@ s2 += a[size - itr - 1];
 a += size;
 }
 printf("%d, ", s1);
-printf("%d\n". s2);
+printf("%d\n", s2);
 }
