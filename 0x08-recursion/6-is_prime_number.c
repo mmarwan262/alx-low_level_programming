@@ -1,6 +1,15 @@
 #include "main.h"
 
 /**
+ * is_prime_recursive - Helper function to recursively check for primality.
+ * @n: The number to check.
+ * @divisor: The current divisor to test.
+ *
+ * Return: 1 if n is prime, 0 otherwise.
+ */
+int is_prime_recursive(int n, int divisor);
+
+/**
  * is_prime_number - Check if a number is prime.
  * @n: The number to check.
  *
@@ -21,7 +30,7 @@ return (is_prime_recursive(n, 2));
  * @divisor: The current divisor to test.
  *
  * Return: 1 if n is prime, 0 otherwise.
-*/
+ */
 int is_prime_recursive(int n, int divisor)
 {
 if (divisor == n)
